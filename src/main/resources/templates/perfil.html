@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>	
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+ <h1 th:text="${titulo}"></h1>
+ <sapan th:text="${usuario.nombre}"></sapan>
+ <sapan th:text="${usuario.apellido}"></sapan>
+ <br>
+ 
+<sapan th:if="${usuario.email}" th:text="${usuario.email}" ></sapan>
+<sapan th:if="${usuario.email == null}">El usuario o tiene correo</sapan>
+
+</body>
+</html>
